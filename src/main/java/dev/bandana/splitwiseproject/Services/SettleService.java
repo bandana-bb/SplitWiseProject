@@ -34,7 +34,7 @@ public class SettleService {
         Set<Expense> expensesettleUp= new HashSet<>();
 
         for(ExpenseUser expenseUser : expenseUsers){
-            expensesettleUp.add(expenseUsergit .getExpense());
+            expensesettleUp.add(expenseUser .getExpense());
         }
 
         List<Expense> settleUpExpenses=settleUpStrategy.settleUp(expensesettleUp.stream().toList());
